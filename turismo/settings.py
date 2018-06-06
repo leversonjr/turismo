@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Minhas Aplicaçôes
+    'turismos',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# E-MAIL
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #imprime no console
+EMAIL_HOST = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'vitoriaturismogoias@gmail.com'

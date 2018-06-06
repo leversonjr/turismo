@@ -1,2 +1,9 @@
 {% extends 'turismos/base.html' %}
 
+{% block content %}
+    <form  method="post" action="{% url'turismos:contato'%}">
+        {% csrf_token %}
+        {{form.as_p}}
+        <buttont type="submit">Enviar</buttont>
+    </form>
+{% endblock content %}

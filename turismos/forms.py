@@ -1,6 +1,6 @@
 from django import forms
 
-class ContatoForm(forms):
+class ContatoForm(forms.Form):
 
     nome = forms.CharField(label='Nome', required=True)
     email = forms.EmailField(label='Email')

@@ -9,7 +9,7 @@ class ContatoForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super(ContatoForm, self).__init__(*args, **kwargs)
         self.fields['nome'].widget.attrs['class'] = 'form-control form-control-sm'
-        self.fields['nome'].widget.attrs['placeholder'] = 'Digite o seu nome completo'
+        self.fields['nome'].widget.attrs['placeholder'] = 'Digite seu nome'
         self.fields['email'].widget.attrs['class'] = 'form-control form-control-sm'
         self.fields['email'].widget.attrs['placeholder'] = 'Digite seu email'
         self.fields['mensagem'].widget.attrs['class'] = 'form-control form-control-sm'

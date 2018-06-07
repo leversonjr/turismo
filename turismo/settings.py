@@ -123,7 +123,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # E-MAIL
+
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' #imprime no console
-EMAIL_HOST = ''
+EMAIL_HOST = 'leversonpbr@gmail.com'
+EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 DEFAULT_FROM_EMAIL = 'vitoriaturismogoias@gmail.com'

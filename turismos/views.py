@@ -18,7 +18,7 @@ def sobre(request):
 
 def contato(request):
 
-    sucesso = False
+
     if request.method == 'POST':
         contato_form = ContatoForm(request.POST)
         if contato_form.is_valid():

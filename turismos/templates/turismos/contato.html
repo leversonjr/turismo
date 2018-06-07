@@ -1,9 +1,8 @@
-{% extends 'turismos/base.html' %}
-
 {% block content %}
-    <form  method="post" action="{% url'turismos:contato'%}">
-        {% csrf_token %}
-        {{form.as_p}}
-        <buttont type="submit">Enviar</buttont>
+
+    <form action="https://formspree.io/leversonpbr@gmail.com"
+      method="POST">
+        {{ contato_form.as_p}}
+        <input type="submit" value="Enviar">
     </form>
 {% endblock content %}

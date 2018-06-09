@@ -1,12 +1,39 @@
+{% load bootstrap3 %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'turismos/style.css' %}"/>
     <title>Vitoria Turismo</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'turismos/sytle/style.css' %}"/>
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
 </head>
 <body>
-    leverson cordeiro
+<div id="interface">
+    <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                    </button>
 
+                    <a class="navbar-brand" href="{% url 'turismos:index'%}">
+                      <img src="{% static 'turismos/imagens/logo-peq-vitoria-turismo.png' %}" width="100"/>
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{% url 'turismos:sobre'%}">Sobre a empresa</a>
+                            <a href="{% url 'turismos:contato'%}">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+</div>
 </body>
 </html>

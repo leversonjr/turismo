@@ -38,8 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Aplicações de terceiros
+    'bootstrap3',
+
     # Minhas Aplicaçôes
     'turismos',
+
+
 ]
 
 MIDDLEWARE = [
@@ -121,6 +126,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Configurando Bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}
 
 # E-MAIL
 

@@ -1,0 +1,10 @@
+@charset'UTF-8';
+
+body {
+    background: url('imagens/background-2.jpg')no-repeat;
+}
+
+div#interface{
+    width: 1000px;
+}
+

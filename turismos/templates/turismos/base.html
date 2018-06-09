@@ -1,4 +1,4 @@
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load static%}
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,30 +13,21 @@
 </head>
 <body>
 <div id="interface">
-    <nav id="menu" class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse" data-target="#navbar"
-                            aria-expanded="false" aria-controls="navbar">
-                    </button>
-
-                    <a class="navbar-brand" href="{% url 'turismos:index'%}">
-                      <img src="{% static 'turismos/imagens/logo-peq-vitoria-turismo.png' %}"/>
-                    </a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse-left">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="{% url 'turismos:sobre'%}">Sobre a empresa</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{% url 'turismos:contato' %}">Contato</a></li>
-
-                    </ul>
-                </div>
-            </div>
+   <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #EEEED1">
+    <a class="navbar-brand" href="{% url 'turismos:index' %}">
+        <img src="{% static 'turismos/imagens/logo-peq-vitoria-turismo.png' %}" width="70" height="50"/>
+    </a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'turismos:contato' %}">Contato</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <div>
         {% block content %} {% endblock content %}

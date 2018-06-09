@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Aplicações de terceiros
-    'bootstrap3',
+    'bootstrap4',
 
     # Minhas Aplicaçôes
     'turismos',

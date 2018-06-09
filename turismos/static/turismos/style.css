@@ -8,17 +8,17 @@ div#interface {
     width: 1200px;
     background-color: #ffffff;
     margin: -22px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.9);
     padding: 10px;
 }
 
 nav#menu {
-    height: 50px;
+    height: 80px;
 }
 nav#menu img{
     position: relative;
     width: 100px;
-    top: -20px;
+    bottom: 10px;
 }
 .footer{
     background-color: #F1F1F1;

@@ -88,10 +88,11 @@ img#instagram{
     height: 80px;
     padding: 0px;
     position: relative;
-    left: 1400px;
+    left: 500px;
     top: -25px;
 
 }
+
 
 .rodape img:hover{
     cursor: pointer;

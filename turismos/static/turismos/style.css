@@ -11,7 +11,6 @@ body {
     margin: -22px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.9);
     padding: 10px;
-
 }
 
 .menu {
@@ -66,13 +65,18 @@ img#instagram{
     left: 50px;
 }
 .cabecalho{
+    font-family: Freestyle Script, sans-serif;
+    font-size:
     color: #FFA500;
     text-align: center;
     padding: 20px;
 }
 .rodape{
+    position: absolute;
     background: #8B7B8B;
+    width: 1536px;
     height: 140px;
+    bottom: 0px;
 }
 .rodape h5{
     color: white;

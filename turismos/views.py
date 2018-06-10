@@ -16,6 +16,10 @@ def sobre(request):
     ''' Pagina sobre a empresa '''
     return render(request, 'turismos/sobre.html')
 
+def pacotes(request):
+    ''' Pagina sobre os pacotes turisticos'''
+    return render(request, 'turismos/pacotes.html')
+
 def contato(request):
 
 

@@ -110,12 +110,12 @@ img#instagram{
     padding: 10px;
 }
 
-.rodape img{
+.rodape figure img{
     width: 80px;
     height: 80px;
     padding: 0px;
     position: relative;
-    left: 1400px;
+    left: 500px;
     top: -20px;
 
 }

@@ -4,7 +4,7 @@
 {% block content %}
    <h1>Vitoria Turismo</h1>
 
-    <form action="https://formspree.io/leversonpbr@gmail.com" method="POST">
+    <form class="form-contato" action="https://formspree.io/leversonpbr@gmail.com" method="POST">
         {% csrf_token %}
         {{ contato_form.as_p}}
         <input type="submit" type="button"  class="btn btn-outline-danger" value="Enviar">

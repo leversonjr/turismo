@@ -16,7 +16,7 @@ body {
 .menu {
     position: relative;
     right: 170px;
-    width: 1520px;
+    width: 1519.9px;
     height: 70px;
     background: #00BFFF;
     overflow: hidden;
@@ -64,21 +64,48 @@ img#instagram{
     height: 25px;
     left: 50px;
 }
-.cabecalho{
+.img-cabecalho{
+    position: relative;
+    right: 10px;
+}
+.texto-foto h1{
+    position: absolute;
+    bottom: 70px;
+    left: 250px;
     font-family: Freestyle Script, sans-serif;
-    font-size:
-    color: #FFA500;
+    font-size: 100pt;
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: -20px;
+}
+.texto-foto:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    -webkit-transition: all 500ms ease;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+}
+.card-group{
+    position: relative;
+    bottom: 10px;
 }
 .rodape{
     position: absolute;
     background: #8B7B8B;
-    width: 1536px;
+    width: 1519px;
     height: 140px;
-    bottom: 0px;
+    bottom: -300px;
 }
 .rodape h5{
+    position: relative;
+    right: 100px;
+    text-align: center;
+    font-size: 15pt;
     color: white;
     padding: 10px;
 }
@@ -89,7 +116,7 @@ img#instagram{
     padding: 0px;
     position: relative;
     left: 1400px;
-    top: -25px;
+    top: -20px;
 
 }
 
@@ -99,6 +126,14 @@ img#instagram{
     transform: translateY(-5px);
     -webkit-transition: all 500ms medium;
 
+}
+
+.form-contato{
+    background: #CDC9C9;
+    border: 10px solid #CDC9C9;
+    position: position;
+    width: 400px;
+    height: 600px;
 }
 
 

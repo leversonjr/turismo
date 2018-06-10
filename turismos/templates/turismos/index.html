@@ -5,12 +5,17 @@
 
 {% block content %}
 <header class="cabecalho">
-  <h1>Sejam Bem Vindos !</h1>
+  <figure class="img-cabecalho">
+    <img src="{% static 'turismos/imagens/background-turismo.jpg'%}" width="1200"/>
+    <figcaption class="texto-foto">
+        <h1>Sejam bem vindos</h1>
+    </figcaption>
+  </figure>
 </header>
 
 <div class="card-group">
   <div class="card">
-    <img class="card-img-top" src="{% static 'turismos/imagens/pacote-beto-carrero-world.png'%}" alt="Card image cap">
+    <img class="card-img-top" src="{% static 'turismos/imagens/pacote-beto-carrero-world.png'%}" width="392" height="294" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>

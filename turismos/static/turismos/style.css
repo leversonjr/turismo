@@ -1,27 +1,44 @@
 @charset'UTF-8';
 
 html{
-    height: 100%;
-    width: 100%;
-    background: url('imagens/background-2.jpg')no-repeat;
 }
 body {
 
-
 }
 
+
+.figure-index img{
+    position: absolute;
+    top: 59px;
+    right: 0px;
+    width: 1537px;
+    height: 700px;
+}
+
+@font-face{
+    font-family: AlexBrush;
+    src: url('turismos/fonts/AlexBrush-Regular.ttf');
+}
+.figcaption-index h1{
+    position: absolute;
+    top: 100px;
+    color: white;
+    text-align: center;
+    font-family: AlexBrush;
+
+}
 .interface {
     width: 1200px;
     background-color: #ffffff;
     margin: -22px auto 0px auto;
-
+    box-shadow: 10px rgba(0,0,0,.5);
     padding: 10px;
 }
 
 .menu {
     position: relative;
-    right: 170px;
-    width: 1519.9px;
+    right: 178px;
+    width: 1536px;
     height: 70px;
     background: #00BFFF;
     overflow: hidden;
@@ -103,6 +120,7 @@ img#instagram{
 .rodape{
     position: absolute;
     background: #8B7B8B;
+    right: 0px;
     width: 1519px;
     height: 140px;
     bottom: -300px;
@@ -136,7 +154,7 @@ img#instagram{
 .form-contato{
     background: #CDC9C9;
     border: 10px solid #CDC9C9;
-    position: position;
+    position: absolute;
     width: 400px;
     height: 600px;
 }

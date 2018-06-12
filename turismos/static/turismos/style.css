@@ -19,32 +19,7 @@ body {
     font-family: Chunkfive-Roman;
     src: url('fonts/Chunkfive.otf');
 }
-.figcaption-index h1{
-    position: absolute;
-    top: 100px;
-    color: white;
-    text-align: center;
-    font-family: Chunkfive-Roman;
-    font-size: 100px;
 
-}
-.figcaption-index h2{
-    position: absolute;
-    top: 180px;
-    right: 700px;
-    color: orange;
-    font-family: Chunkfive-Roman;
-    font-size: 70px;
-}
-
-.figcaption-index h3{
-    position: absolute;
-    top: 180px;
-    right: 700px;
-    color: orange;
-    font-family: Chunkfive-Roman;
-    font-size: 70px;
-}
 
 .interface {
     width: 1200px;

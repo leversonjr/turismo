@@ -1,4 +1,4 @@
-@charset'UTF-8';
+﻿@charset'UTF-8';
 
 html{
 }
@@ -9,20 +9,61 @@ body {
 
 .figure-index img{
     position: absolute;
-    top: 57px;
+    top: 59px;
     right: 0px;
     width: 1537px;
-    height: 700px;
+    height: 699px;
 }
 
 @font-face{
     font-family: Chunkfive-Roman;
     src: url('fonts/Chunkfive.otf');
 }
+.figcaption-index h1{
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    color: white;
+    text-align: center;
+    font-family: Chunkfive-Roman;
+    font-size: 100px;
 
+}
+.figcaption-index h2{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    right: 500px;
+    color: orange;
+    font-family: Chunkfive-Roman;
+    font-size: 70px;
+}
+
+.figcaption-index h3{
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    color: white;
+    font-family: Chunkfive-Roman;
+    font-size: 60px;
+    text-shadow: 5px 0 rgba(0,0,0,.5), 0 1px rgba(0,0,0,.5), 1px 0 rgba(0,0,0,.5), 0 -1px rgba(0,0,0,.5);
+}
+
+
+.circulo{
+    position: relative;
+    left: 745px;
+    top: 300px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(255,0,0,0.7);
+    border-radius: 300px;
+
+
+}
 
 .interface {
-    width: 1200px;
+    width: 1000px;
     background-color: #ffffff;
     margin: -22px auto 0px auto;
     box-shadow: 10px rgba(0,0,0,.5);
@@ -30,12 +71,14 @@ body {
 }
 
 .menu {
-    position: relative;
-    right: 178px;
+    position: absolute;
+    right: 0px;
     width: 1536px;
     height: 70px;
-    background: #00BFFF;
+    background: #E8E8E8;
     overflow: hidden;
+    border-bottom: 2px solid #EEE9E9;
+    
 
 }
 .menu ul{
@@ -51,14 +94,14 @@ body {
 
 .menu ul li a{
     position: relative;
+    top: -5px;
     left: 900px;
     text-decoration: none;
     display: block;
     text-align: center;
-    color: white;
+    color: black;
     padding: 14px 16px;
     font-size: 18px;
-    font-family: sans-serif;
 }
 
 .menu ul li a:hover{
@@ -70,37 +113,37 @@ body {
 .menu img{
     position: relative;
     right: 750px;
-    top: -8px;
+    top: -5px;
     width: 90px;
     height: 70px;
 }
 .card-group{
     position: relative;
-    top: 20px;
+    top: 200px;
 
 }
-.rodape{
+.rodape {
     position: absolute;
-    background: #8B7B8B;
+    background: #E6E6FA;
     right: 0px;
-    width: 1519px;
-    height: 140px;
-    bottom: -300px;
+    width: 1536px;
+    height: 60px;
+    bottom: 0px;
 }
 .rodape h5{
-    position: relative;
-    right: 100px;
+    position: absolute;
+    left: 200px;
     text-align: center;
     font-size: 15pt;
-    color: white;
+    color: black;
     padding: 10px;
 }
 
 .rodape img{
-    padding: 0px;
+    
     position: relative;
     left: 1300px;
-    top: -20px;
+    bottom: -10px;
 
 
 }
@@ -113,12 +156,15 @@ body {
 
 }
 
-.form-contato{
-    background: #CDC9C9;
-    border: 10px solid #CDC9C9;
-    position: absolute;
+.form-contato {
+    background: #CDC9C9 no-repeat;
+    border: 10px solid #8B8989;
+    position: relative;
+    left: 800px;
     width: 400px;
     height: 600px;
-}
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}   
 
 

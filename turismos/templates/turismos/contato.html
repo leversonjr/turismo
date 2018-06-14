@@ -6,8 +6,8 @@
 
     <form class="form-contato" action="https://formspree.io/leversonpbr@gmail.com" method="POST">
         {% csrf_token %}
-        {{ contato_form.as_p}}
-        <input type="submit" type="button"  class="btn btn-outline-danger" value="Enviar">
+        {{ contato_form.as_p }}
+        <input type="submit" type="button"  class="btn btn-danger" value="Enviar">
 
     </form>
  <div class="rodape">

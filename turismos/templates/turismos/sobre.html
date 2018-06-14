@@ -6,6 +6,74 @@
     <div id="pg-sobre">
         <h2>Vitoria Turismo</h2>
         <p>A empresa está em Abadia de Goiás.</p>
+        <p>
+            O CSS
+            Para cada label e input foi adicionado uma div.input para inserir uma formatação por grupo.
+
+            O form está centralizado com max-width:
+            Por ser um elemento ‘block’, vamos definir o tamanho máximo que ele pode ter.
+
+            form {
+            margin: 0 auto;
+            max-width: 850px;
+            padding: 20px 10px;
+            background-color: rgba(255,255,255,0.4)
+            }
+            O grupo div.input com 50% em ‘width’ do form:
+            .input {
+            float: left;
+            width: 48%;
+            padding: 0 1% 20px;
+            position: relative;
+            }
+
+            .input.txt { width: 98%; } /*textarea 100%*/
+            Os labels:
+            .input label {
+            display: block;
+            padding-bottom: 5px;
+            color: #666;
+            }
+            .input label.error {
+            position: absolute;
+            right: 18px;
+            top: 35px;
+            color: #f00;
+            }
+            O label.error é gerado pelo jQuery validate e adicionado seguido dos campos.
+
+            Os campos:
+            .input input,
+            .input textarea {
+            padding-top: 10px;
+            padding-bottom: 9px;
+            border: none;
+            font-size: 16px;
+            font-weight: 100;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+
+            .input input {
+            width: 94%;
+            padding-left: 3%;
+            padding-right: 3%;
+            }
+
+            .input textarea {
+            width: 97%;
+            padding-left: 1.5%;
+            padding-right: 1.5%;
+            }
+            Formatamos os campos para ter 100% de tamanho do elemento pai ‘div.input’.
+
+            Sempre que redimensionar não haverá quebras, portanto, responsivo meu amigo.
+
+            Agora um capricho para resoluções pequenas.
+            @media screen and (max-width: 520px) {
+            .input {
+            width: 98%;
+            }
+        </p>
     </div>
  <div class="rodape">
         <footer>

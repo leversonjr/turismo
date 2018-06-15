@@ -1,73 +1,43 @@
 ﻿@charset'UTF-8';
-
-html{
-}
-body {
-    background: black;
-}
-
-
-.figure-index img{
-    position: absolute;
-    top: 59px;
-    right: 0px;
-    width: 1537px;
-    height: 699px;
-}
-
-@font-face{
+@font-face {
     font-family: Chunkfive-Roman;
     src: url('fonts/Chunkfive.otf');
 }
-.figcaption-index h1{
-    position: absolute;
-    left: 50px;
-    top: 100px;
-    color: white;
-    text-align: center;
-    font-family: Chunkfive-Roman;
-    font-size: 100px;
-
-}
-.figcaption-index h2{
-    position: absolute;
-    left: 700px;
-    top: 200px;
-    right: 500px;
-    color: orange;
-    font-family: Chunkfive-Roman;
-    font-size: 70px;
-}
-
-.figcaption-index h3{
-    position: absolute;
-    top: 350px;
-    right: 200px;
-    color: white;
-    font-family: Chunkfive-Roman;
-    font-size: 60px;
-    text-shadow: 5px 0 rgba(0,0,0,.5), 0 1px rgba(0,0,0,.5), 1px 0 rgba(0,0,0,.5), 0 -1px rgba(0,0,0,.5);
+body{
+    border: 0px;
+    padding: 0px;
 }
 
 
-.circulo{
-    position: relative;
-    left: 745px;
-    top: 300px;
-    width: 350px;
-    height: 350px;
-    background-color: rgba(255,0,0,0.7);
-    border-radius: 300px;
-
+#box-1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('parallax/box-1.jpg');
+    background-size: cover;
 
 }
 
-.interface {
-    width: 1000px;
-    background-color: #ffffff;
-    margin: -22px auto 0px auto;
-    box-shadow: 10px rgba(0,0,0,.5);
-    padding: 10px;
+#box-2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('parallax/box-2.jpg');
+    background-size: cover;
+}
+
+#box-3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('parallax/box-3.jpg');
+    background-size: cover;
+}
+
+.conteudo{
+    width: 80%;
+    margin-left: 150px;
+    background-color: Scrollbar;
+
+    
+    
 }
 
 .menu {
@@ -117,6 +87,10 @@ body {
     width: 90px;
     height: 70px;
 }
+.pagina-contato{
+    position: relative;
+    top: 100px;
+}
 .card-group{
     position: relative;
     top: 200px;
@@ -157,14 +131,17 @@ body {
 }
 
 .form-contato {
-    background: #CDC9C9 no-repeat;
+    background: yellow no-repeat;
     border: 10px solid #8B8989;
     position: relative;
+    top: 50px;
     left: 800px;
     width: 400px;
     height: 600px;
     padding: 10px;
     font-family: Arial, sans-serif;
-}   
+} 
+
+
 
 

@@ -12,21 +12,40 @@
     {% bootstrap_javascript %}
 </head>
 <body>
-<div class="interface">
+<div id="interface">
     <div class="menu">
         <ul>
-            <li><a href="{% url 'turismos:index'%}">
-                <img src="{% static 'turismos/imagens/logo-peq-vitoria-turismo.png'%}"/></a></li>
+            <li>
+                <a href="{% url 'turismos:index'%}">
+                    <img src="{% static 'turismos/imagens/logo-peq-vitoria-turismo.png'%}" />
+                </a>
+            </li>
             <li><a href="{% url 'turismos:sobre'%}">Sobre a empresa</a></li>
             <li><a href="{% url 'turismos:contato'%}">Contato</a></li>
             <li><a href="{% url 'turismos:pacotes'%}">Pacotes</a></li>
 
         </ul>
     </div>
-    <div>
+    </div>
+    <div class="conteudo">
         {% block content %} {% endblock content %}
     </div>
-</div>
+    <div id="index">
+        {% block index %} {% endblock index %}
+    </div>
+    
+    <div class="rodape">
+        <footer>
+            <h5>Contato: 3503-1604</h5>
+            <a href="https://www.instagram.com/vitoriaturismo_go/" target="_blank">
+                <img src="{% static 'turismos/imagens/btn-instagram.png'%}" width="40" height="40" />
+            </a>
+            <a href="https://www.facebook.com/vitoriaturismoab/" target="_blank">
+                <img src="{% static 'turismos/imagens/btn-facebook.png'%}" width="40" height="40" />
+            </a>
+        </footer>
+    </div>
+
 
 
 </body>

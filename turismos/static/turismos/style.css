@@ -12,12 +12,19 @@ body{
     border: 0px;
     padding: 0px;
 }
+#btn-menu{
+    display: none;
+}
+div label{
+     display: block;
+     
+ }
 
 
 #box-1 {
     height: 100vh;
     width: 100%;
-    background-image: url('parallax/box-2.jpg');
+    background-image: url('parallax/box-1.png');
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -55,7 +62,18 @@ body{
     font-size: 100px;
     text-align: center;
     display: table-cell;
-    animation: bounceIn 3s steps(1, start);
+    animation: bounceIn 1s normal;
+    text-shadow: -3px 0 rgba(0,0,0,0.5), 0 1px rgba(0,0,0,0.5), 1px 0 rgba(0,0,0,0.5);
+}
+
+.jumbotron {
+    position: relative;
+    width: 50%;
+    left: 400px;
+    top: 450px;
+    border: 5px solid white;
+    color: white;
+    text-align: center; 
     
 }
 @-webkit-keyframes bounceIn {
@@ -137,13 +155,15 @@ body{
         transform: scale3d(1, 1, 1);
     }
 }
+
 #box-1 p {
     position: relative;
     top: 300px;
     right: 480px;
     font-size: 60px;
-    color: white;
-    animation: bounceIn 3s steps(1, start);
+    color: orange;
+    animation: bounceIn 1s normal;
+    text-shadow: -2px 0 rgba(0,0,0,0.5), 0 1px rgba(0,0,0,0.5), 1px 0 rgba(0,0,0,0.5);
 }
 
 
@@ -158,6 +178,7 @@ body{
 
 .menu {
     position: absolute;
+    display: flex;
     right: 0px;
     width: 1536px;
     height: 70px;
@@ -218,7 +239,7 @@ body{
     right: 0px;
     width: 1536px;
     height: 60px;
-    bottom: 0px;
+    top: 2218px;
 }
 .rodape h5{
     position: absolute;
